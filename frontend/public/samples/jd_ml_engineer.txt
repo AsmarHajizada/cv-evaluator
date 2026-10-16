@@ -1,0 +1,30 @@
+Senior Machine Learning Engineer at Fennwick Mobility (Berlin, hybrid)
+
+About us
+Fennwick Mobility builds routing and pricing software for urban delivery fleets. We are a team of 60 and growing.
+
+What you will do
+- Design, train, and ship ML models that forecast demand and optimise fleet allocation.
+- Deploy models to production and own their reliability, monitoring, and retraining.
+- Work closely with data engineers and product managers to turn business problems into ML solutions.
+
+What we are looking for
+- 4+ years of experience building machine learning systems in industry.
+- Strong Python and experience with PyTorch or TensorFlow.
+- Production model deployment experience (APIs, containers).
+- Hands-on experience running workloads on Kubernetes.
+- Experience with MLOps practices: CI/CD for models, monitoring, and automated retraining.
+- Solid SQL skills.
+- Experience with time-series forecasting.
+
+Nice to have
+- Experience with LLMs or retrieval-augmented generation.
+- Experience with AWS or GCP.
+- MSc or PhD in a quantitative field.
+
+We offer
+- Competitive salary and equity
+- 30 days of paid vacation
+- Flexible working hours
+
+Fennwick Mobility is an equal opportunity employer.
