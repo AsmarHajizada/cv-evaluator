@@ -1,0 +1,50 @@
+[project]
+name = "cv-eval"
+version = "0.1.0"
+description = "Evidence-grounded CV evaluation against a job description"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "pydantic-ai-slim[google]>=2.56",
+    "pydantic-settings>=2.6",
+    "docling>=2.139",
+    "typer>=0.19",
+    "fastapi>=0.143",
+    "uvicorn[standard]>=0.35",
+    "python-multipart>=0.0.20",
+    "trafilatura>=2.3",
+    "httpx>=0.28",
+    "beautifulsoup4>=4.12",
+]
+
+[project.scripts]
+cv-eval = "cv_eval.cli:app"
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "anyio>=4",
+    "ruff>=0.8",
+    "python-docx>=1.1",
+    "httpx>=0.28.1",
+    "pyright>=1.1.414",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: needs Docling layout models (downloaded on first run)"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pyright]
+include = ["src", "tests"]
+venvPath = "."
+venv = ".venv"
